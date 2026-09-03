@@ -1,63 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>elsa's eyrie'</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <main class="desk">
+        <section class="craft-mat">
+            <div class="center">
+                <nav class="sticky-navigation" aria-label="homepage navigation">
+                    <a class="nav-note projects" href="projects.html">Projects</a>
+                    <a class="nav-note about" href="about.html">About</a>
+                    <a class="nav-note notes" href="notes.html">Notes</a>
+                </nav>
     
-        <title> elsa's eyrie </title>
-        <link rel="stylesheet" href="style.css">
-
-        <!--imports-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"
->
-    </head>
-    <img
-            class="header-gif" src="assets/studio ghibli GIF.gif" alt=""
-        >
-    
-    <header class="page-header">
-        <h1>elsa wang</h1>
-
-        <nav class="home-nav">
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="notes.html">Notes</a>
-        </nav>
-    </header>
-        
-    <section id="about">
-        <p class="about-me">Hi! Welcome to my personal website where I document my projects.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <article class="project">
-            <div class="project-media">
-                <video control>
-                    <source src="assets/uneditedViz.mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <div class="project-note">
-                <h3><em>Visualizing a Dwarf Galaxy's Neutral Hydrogen Gas Disk in Three-Dimensions</em></h3>
+                <header class="hero">
+                    <h1>elsa wang</h1>
                 
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                    <p class="tagline">
+                        Hi! Welcome to my personal website where I document my projects.
+                    </p>
+                </header>
             </div>
-        </article>
-    </section>
-    
+            
+            <div class="left-objects">
+                <button
+                    class="washi-tape"
+                    id="washi-button"
+                    type="button"
+                    aria-label="interact with washi tape"
+                >
+                    <!-- <img src="assets/washi-tape.png" alt=""> -->
+                </button>
+            
+                <button
+                    class="scissors"
+                    id="scissors-button"
+                    type="button"
+                    aria-label="interact with scissors"
+                >
+                    <!-- <img src="assets/scissors.png" alt=""> -->
+                </button>
+            </div>
+
+
+            <div class="right-objects">
+                <button
+                    class="glue-gun"
+                    id="glue-button"
+                    type="button"
+                    aria-label="interact with hot glue gun"
+                >
+                    <!-- <img src="assets/glue-gun.png" alt=""> -->
+                </button>
+            
+                <a
+                    class="cat"
+                    href="secret.html"
+                    aria-label="???"
+                >
+                    <!-- <img src="assets/cat-sticker.png" alt=""> -->
+                </a>
+            </div>
+
+        </section>
+
+        <dialog id="washi-dialog">
+            <button class="close-dialog" type="button" aria-label="Close">×</button>
+        
+            <h2>???</h2>
+            <p>
+                ???
+            </p>
+        </dialog>
+        
+        <dialog id="scissors-dialog">
+            <button class="close-dialog" type="button" aria-label="Close">×</button>
+        
+            <h2>???</h2>
+            <p>
+                ???
+            </p>
+        </dialog>
+        
+        <dialog id="glue-dialog">
+            <button class="close-dialog" type="button" aria-label="Close">×</button>
+        
+            <h2>???</h2>
+            <p>
+                ???
+            </p>
+        </dialog>
+
+    </main>
 </body>
+
 </html>
 
