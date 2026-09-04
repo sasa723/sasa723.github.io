@@ -35,14 +35,51 @@ body {
     background-repeat: no-repeat;
 }
 
+.sticky-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    gap: 14px;
+}
+ .sticky-navigation a {
+    padding: 12px 18px;
+ 
+ 
+    color: black;
+    background-color: #ffe86a;
+ 
+ 
+    font-family: "Space Mono", monospace;
+    font-size: 25px;
+    text-decoration: none;
+ 
+ 
+    box-shadow: 4px 5px 0 rgba(0,0,0,0.18);
+ }
+ .sticky-navigation a:nth-child(2) {
+    transform: rotate(1deg);
+ }
+ 
+ 
+ .sticky-navigation a:nth-child(1) {
+    transform: rotate(-2deg);
+    background-color: #ffb7d5;
+ }
+ 
+ 
+ .sticky-navigation a:nth-child(3) {
+    transform: rotate(-1deg);
+    background-color: #a8e8ff;
+ }
+ 
 h1{
     margin:0;
  
  
     color: black;
     font-family: "Alata", sans-serif;
-    font-size: 75px;
+    font-size: 95px;
  }
  
  .center {
@@ -62,34 +99,69 @@ h1{
     max-width: 600px;
 
     color: #1d2520;
-    font-size: 20px;
+    font-family: "Space Mono", monospace;
+    font-size: 25px;
 }
 
 .desk-object {
     display: block;
+    position: absolute;
     padding: 0;
     border: 0;
     background: transparent;
     cursor: pointer;
     text-decoration: none;
+    pointer-events: auto;
 }
 
 .desk-object img {
     display: block;
     height: auto;
 }
+
+.washi-tape {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
 .washi-tape img {
-    width: 170px;
+    display: block;
+    width: clamp(280px, 35vw, 550px);
+    height: auto;
 }
 
+.scissors {
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    z-index: 8;
+}
 .scissors img {
-    width: 190px;
+    display: block;
+    width: clamp(280px, 27vw, 550px);
+    height: auto;
 }
 
+.glue-gun {
+    position: fixed;
+    top: 40px;
+    right: 0;
+    z-index: 9;
+}
 .glue-gun img {
-    width: 240px;
+    display: block;
+    width: clamp(280px, 33vw, 550px);
+    height: auto;
 }
 
+.cat {
+    position: fixed;
+    bottom: 40px;
+    right: 100px;
+}
 .cat img {
-    width: 110px;
+    display: block;
+    width: clamp(180px, 13vw, 350px);
+    height: auto;
 }
