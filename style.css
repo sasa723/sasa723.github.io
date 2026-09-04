@@ -11,10 +11,8 @@ body {
 .desk {
     min-height: 100vh;
     padding: 40px;
-
-    background-color: #e9cea8;
     
-    /* background-image: url("assets/desk-background.png"); */
+    background-image: url("assets/backgroundwebsite.png");
     
     background-size: cover;
     background-position: center;
@@ -30,7 +28,7 @@ body {
     width: min(1100px, 92vw);
     aspect-ratio: 11 / 7;
 
-    /* background-image: url("assets/craft-mat.png"); */
+    background-image: url("assets/craftmat.png");
    
     background-size: contain;
     background-position: center;
@@ -65,4 +63,33 @@ h1{
 
     color: #1d2520;
     font-size: 20px;
+}
+
+.desk-object {
+    display: block;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.desk-object img {
+    display: block;
+    height: auto;
+}
+.washi-tape img {
+    width: 170px;
+}
+
+.scissors img {
+    width: 190px;
+}
+
+.glue-gun img {
+    width: 240px;
+}
+
+.cat img {
+    width: 110px;
 }
