@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>elsa's eyrie</title>
+    <title>eyrie</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <main class="desk">
         <section class="craft-mat">
@@ -28,78 +27,123 @@
                     </p>
                 </header>
             </div>
-            
-            <div class="left-objects">
-                <button
-                    class="desk-object washi-tape"
-                    id="washi-button"
-                    type="button"
-                    aria-label="interact with washi tape"
-                >
-                    <img src="assets/washitape.png" alt="">
-                </button>
-            
-                <button
-                    class="desk-object scissors"
-                    id="scissors-button"
-                    type="button"
-                    aria-label="interact with scissors"
-                >
-                    <img src="assets/scissors.png" alt="">
-                </button>
-            </div>
-
-
-            <div class="right-objects">
-                <button
-                    class="desk-object glue-gun"
-                    id="glue-button"
-                    type="button"
-                    aria-label="interact with hot glue gun"
-                >
-                    <img src="assets/hotgluegun.png" alt="">
-                </button>
-            
-                <a
-                    class="desk-object cat"
-                    href="secret.html"
-                    aria-label="???"
-                >
-                    <img src="assets/sticker.png" alt="">
-                </a>
-            </div>
-
         </section>
 
-        <dialog id="washi-dialog">
-            <button class="close-dialog" type="button" aria-label="Close">×</button>
+        <div class="left-objects">
+
+            <!-- WASHI-TAPE BUTTON -->
+            <button
+                class="desk-object washi-tape"
+                type="button"
+                data-dialog="washi-dialog"
+                data-sound="assets/sound_effects/taperollshort.mp3"
+                aria-label="Open washi tape window"
+            >
+                <img src="assets/washitape.png" alt="">
+            </button>
         
-            <h2>Hi</h2>
-            <p>
-                whwhw
-            </p>
+            <!-- SCISSORS BUTTON -->
+            <button
+                class="desk-object scissors"
+                type="button"
+                data-dialog="scissors-dialog"
+                data-sound="assets/sound_effects/snipshort.mp3"
+                aria-label="Open scissors window"
+            >
+                <img src="assets/scissors.png" alt="">
+            </button>
+        </div>
+
+        <!-- WASHI-TAPE WINDOW -->
+        <dialog class="faux-window" id="washi-dialog">
+            <div class="window-bar">
+                <span>washi tape</span>
+        
+                <button
+                    class="close-dialog"
+                    type="button"
+                    aria-label="Close window"
+                >
+                    [x]
+                </button>
+            </div>
+        
+            <div class="window-content">
+                <p>"Not all who wander are lost."</p>
+            </div>
         </dialog>
+
+        <!-- SCISSORS WINDOW -->
+        <dialog class="faux-window" id="scissors-dialog">
+            <div class="window-bar">
+                <span>scissors</span>
         
-        <dialog id="scissors-dialog">
-            <button class="close-dialog" type="button" aria-label="Close">×</button>
+                <button
+                    class="close-dialog"
+                    type="button"
+                    aria-label="Close window"
+                >
+                    [x]
+                </button>
+            </div>
         
-            <h2>???</h2>
-            <p>
-                ???
-            </p>
+            <div class="window-content">
+                <h2>Things I’m Making</h2>
+        
+                <p>
+                    current crafts: ---
+                </p>
+            </div>
         </dialog>
+
+
+        <div class="right-objects">
+
+            <!-- GLUE-GUN BUTTON -->
+            <button
+                class="desk-object glue-gun"
+                type="button"
+                data-dialog="glue-dialog"
+                data-sound="assets/sound_effects/water-dropshort.mp3"
+                aria-label="Open hot glue gun window"
+            >
+                <img src="assets/hotgluegun.png" alt="">
+            </button>
         
-        <dialog id="glue-dialog">
-            <button class="close-dialog" type="button" aria-label="Close">×</button>
+            <!-- CAT BUTTON -->
+            <a
+                class="desk-object cat"
+                href="secret.html"
+                aria-label="???"
+            >
+                <img src="assets/sticker.png" alt="">
+            </a>
+        </div>
+
+        <!-- GLUE-GUN WINDOW -->
+        <dialog class="faux-window" id="glue-dialog">
+            <div class="window-bar">
+                <span>hot glue gun</span>
         
-            <h2>???</h2>
-            <p>
-                ???
-            </p>
+                <button
+                    class="close-dialog"
+                    type="button"
+                    aria-label="Close window"
+                >
+                    [x]
+                </button>
+            </div>
+        
+            <div class="window-content">
+                <h2>goals</h2>
+        
+                <p>
+                    goals or random thought
+                </p>
+            </div>
         </dialog>
 
     </main>
+    <script src="script.js"></script>
 </body>
-
 </html>
-
