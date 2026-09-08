@@ -339,3 +339,96 @@ h1{
 .cat:hover img {
     transform: scale(1.05);
 }
+
+
+/* PROJECTS PAGEEEEEEEEEE */
+.projects-page {
+    min-height: 100vh;
+    padding: 40px;
+
+    background-color: #d9f7fe;
+}
+
+.bulletin-board {
+    width: min(1200px, 100%);
+    min-height: 800px;
+
+    margin: 0 auto;
+    padding: 50px;
+
+    background-color: #f1d9c3;
+    border: 14px solid #b78665;
+
+    /*
+    background-image: url("assets/bulletin-board.png");
+    background-size: cover;
+    background-position: center;
+    */
+}
+
+.board-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.projects-page h1 {
+    margin: 0;
+    font-family: "Alata", sans-serif;
+    font-size: 70px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 55px;
+}
+
+.projects-page .project-card {
+    position: relative;
+
+    min-height: 320px;
+    padding: 45px;
+
+    color: #222;
+    background-color: #ffe982;
+
+    box-shadow: 9px 11px 0 rgba(0, 0, 0, 0.17);
+}
+
+.project-card h2 {
+    margin-top: 0;
+
+    font-family: "Alata", sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.project-card p {
+    font-family: "Space Mono", monospace;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.project-card a {
+    color: #222;
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    .projects-page {
+        padding: 15px;
+    }
+
+    .bulletin-board {
+        padding: 30px 20px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-page h1 {
+        font-size: 48px;
+    }
+}
